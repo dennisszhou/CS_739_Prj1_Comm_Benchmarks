@@ -144,7 +144,6 @@ LBB1_3:                                 ## =>This Loop Header: Depth=1
 LBB1_4:                                 ##   Parent Loop BB1_3 Depth=1
                                         ## =>  This Inner Loop Header: Depth=2
 	movl	-40(%rbp), %eax
-	movl	%eax, -36(%rbp)
 	decl	%ebx
 	jne	LBB1_4
 ## BB#5:                                ##   in Loop: Header=BB1_3 Depth=1

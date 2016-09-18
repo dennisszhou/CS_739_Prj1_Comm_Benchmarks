@@ -58,7 +58,7 @@ int cpp_main( int argc, char * argv[] )
       {
         current_time.wall = cpu.elapsed().wall;
       }
-      cout << current_time.wall - start_time.wall << "ns " << endl;
+      cout << current_time.wall - start_time.wall << "ns ";
     }
   }
   return 0;
