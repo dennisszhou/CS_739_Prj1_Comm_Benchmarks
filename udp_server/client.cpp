@@ -18,12 +18,6 @@ int main(int argc, char* argv[])
     udp::resolver::query query(udp::v4(), "127.0.0.1", "8081");
     udp::endpoint receiver_endpoint = *resolver.resolve(query);
 
-    // udp::endpoint listen_endpoint(
-    //    boost::asio::ip::address::from_string("127.0.0.1"), 8080);
-
-    udp::socket sock(io_service);
-    sock.open(udp::v4());
-
     DeadlineClient d_client(&io_service);
 
     boost::array<char, 1> send_buf  = {{0}};
